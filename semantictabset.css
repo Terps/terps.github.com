@@ -1,0 +1,13 @@
+dl.tabset	{ margin:0; padding:0; position:relative }
+dl.tabset dt	{ display:inline; float:left; background-color:#fee; border:1px solid #c66; border-left-width:0; padding:0 0.5em; margin:0; height:1.4em; line-height:1.4em; cursor:pointer }
+dl.tabset dd	{ display:none }
+
+dl.tabset dt.active { background-color:#efe; border-color:#6c6; border-bottom:0; z-index:1; position:relative; cursor:default }
+dl.tabset dd.active	{ display:block; position:absolute; left:0; top:1.4em; margin:0; background-color:#efe; border:1px solid #6c6; width:95%; padding:0.5em }
+
+dl.tabset dt.first-child	{ border-left-width:1px }
+dl.tabset dt.preActive	{ border-right-width:0 }
+dl.tabset dt.active	{ border-left-width:1px }
+dl.tabset dt.postActive	{  }
+
+dl.tabset dt.ieclear	{ float:none; display:block; height:0; overflow:hidden; border:none; padding:0 }

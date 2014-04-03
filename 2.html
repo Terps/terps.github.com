@@ -1,0 +1,308 @@
+<HTML>
+
+<HEAD>
+<TITLE>Web things</TITLE>
+<script type="text/javascript"
+    src="https://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+var map;
+function initialize() {
+  var myLatlng = new google.maps.LatLng(50.41460051337302,30.519691124198914);
+  var myOptions = {
+    zoom: 8,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  
+ // google.maps.event.addListener(map, 'zoom_changed', function() {
+ //   setTimeout(moveToDarwin, 3000);
+ // });
+  
+  var marker = new google.maps.Marker({
+      position: myLatlng, 
+      map: map,
+      title:"Hello World!"
+  });
+ // google.maps.event.addListener(marker, 'click', function() {
+ //   map.setZoom(8);
+//	mqu.push(['trackEvent','ButtonCategory','ButtonClick','Click','1']);
+  //});
+}
+  
+//function moveToDarwin() {
+//  var darwin = new google.maps.LatLng(-12.461334, 130.841904);
+//  map.setCenter(darwin);
+//}
+</script>
+
+<script src="http://dl.dropbox.com/u/59849502/Final_test_site/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="http://dl.dropbox.com/u/59849502/Final_test_site/jquery-ui-1.8.4.all.min.js" type="text/javascript"></script>
+<script src="http://dl.dropbox.com/u/59849502/Final_test_site/jquery.spritespin.js" type="text/javascript"></script>
+<link href="http://dl.dropbox.com/u/59849502/Final_test_site/jquery-ui-1.8.4.all.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ <script type="text/javascript">
+    $(function(){
+      //$("#spritespin").spritespin({
+      //  width   : 80,
+      //  height  : 80,
+      //  image   : "images/spritespin.jpg",
+      //  frame   : 0,
+      //  frames  : 71,
+      //  animate : true,
+      //  loop    : true,
+      //  behavior:"spin"
+      //});
+      //
+      $("#bike").spritespin({
+        width     : 480,
+        height    : 327,
+        frames    : 34,
+        image     : [
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_001.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_002.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_003.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_004.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_005.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_006.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_007.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_008.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_009.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_010.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_011.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_012.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_013.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_014.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_015.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_016.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_017.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_018.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_019.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_020.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_021.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_022.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_023.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_024.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_025.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_026.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_027.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_028.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_029.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_030.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_031.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_032.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_033.jpg",
+          "http://dl.dropbox.com/u/59849502/Final_test_site/images/rad_zoom_034.jpg",
+		  /*"images/rad_zoom_001.jpg",
+          "images/rad_zoom_002.jpg",
+          "images/rad_zoom_003.jpg",
+          "images/rad_zoom_004.jpg",
+          "images/rad_zoom_005.jpg",
+          "images/rad_zoom_006.jpg",
+          "images/rad_zoom_007.jpg",
+          "images/rad_zoom_008.jpg",
+          "images/rad_zoom_009.jpg",
+          "images/rad_zoom_010.jpg",
+          "images/rad_zoom_011.jpg",
+          "images/rad_zoom_012.jpg",
+          "images/rad_zoom_013.jpg",
+          "images/rad_zoom_014.jpg",
+          "images/rad_zoom_015.jpg",
+          "images/rad_zoom_016.jpg",
+          "images/rad_zoom_017.jpg",
+          "images/rad_zoom_018.jpg",
+          "images/rad_zoom_019.jpg",
+          "images/rad_zoom_020.jpg",
+          "images/rad_zoom_021.jpg",
+          "images/rad_zoom_022.jpg",
+          "images/rad_zoom_023.jpg",
+          "images/rad_zoom_024.jpg",
+          "images/rad_zoom_025.jpg",
+          "images/rad_zoom_026.jpg",
+          "images/rad_zoom_027.jpg",
+          "images/rad_zoom_028.jpg",
+          "images/rad_zoom_029.jpg",
+          "images/rad_zoom_030.jpg",
+          "images/rad_zoom_031.jpg",
+          "images/rad_zoom_032.jpg",
+          "images/rad_zoom_033.jpg",
+          "images/rad_zoom_034.jpg",*/
+        ],
+        animate   : true,
+        loop      : true,
+        frameTime : 60,
+        fadeFrames : 20,
+        fadeInTime : 0,
+        fadeOutTime : 0//120
+      });
+      //  
+      //$("#bike2").spritespin({
+      //  width     : 640,
+      //  height    : 437,
+      //  frames    : 34,
+      //  image     : "images/bike.jpg",
+      //  frameTime : 60
+      //});
+      
+      $("#bike2").spritespin({
+        width     : 480,
+        height    : 327,
+        frames    : 34,
+        framesX   : 6,
+        image     : "http://dl.dropbox.com/u/59849502/Final_test_site/images/bike6x6.jpg",
+        frameTime : 60
+      });
+      //$("#bike2").spritespin({
+      //  width     : 640,
+      //  height    : 437,
+      //  frames    : 34,
+      //  framesX   : 6,
+      //  image     : "images/bike6x6_big.jpg",
+      //  frameTime : 60
+      //});
+    });
+    </script>
+<link rel="stylesheet" type="text/css" href="semantictabset.css">
+<script type="text/javascript" src="addclasskillclass.js"></script>
+<script type="text/javascript" src="attachevent.js"></script>
+<script type="text/javascript" src="semantictabset.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var cont_pos = $("#swipe_container").position();
+        var item_width = $(".item").width();
+        var items = $("#swipe_container > div.item").length;
+        var item_index = 1;
+        var cont_post_temp;
+
+        $("#swipe_container").draggable({ axis: "x", revert: true });
+
+        function bindMouseUp() {
+            $("#swipe_container").unbind('mouseup');
+            cont_post_temp = $("#swipe_container").position().left;
+            if (cont_pos.left > cont_post_temp && item_index != items) {
+                // swipe to right
+                $("#swipe_container").draggable("option", "revert", false);
+                var moveLeft = cont_pos.left - cont_post_temp;
+                moveLeft = Math.abs(item_width - moveLeft);
+                $("#swipe_container").animate({
+                    left: '-=' + moveLeft
+                }, 500, function() {
+                    $("#swipe_container").draggable("option", "revert", true);
+                    cont_pos = $("#swipe_container").position();
+                    $("#swipe_container").bind('mouseup', function() {
+                        bindMouseUp();
+                    });
+                });
+                item_index++;;
+            } else if (cont_pos.left < cont_post_temp && item_index != 1) {
+                // swipe to left
+                $("#swipe_container").draggable("option", "revert", false);
+                var moveLeft = cont_post_temp - cont_pos.left;
+                moveLeft = Math.abs(item_width - moveLeft);
+                $("#swipe_container").animate({
+                    left: '+=' + moveLeft
+                }, 500, function() {
+                    $("#swipe_container").draggable("option", "revert", true);
+                    cont_pos = $("#swipe_container").position();
+                    $("#swipe_container").bind('mouseup', function() {
+                        bindMouseUp();
+                    });
+                });
+                item_index = item_index - 1;
+            } else {
+                // on the beginning or end item swipe
+                $("#swipe_container").draggable( "option", "revert", true );
+                $("#swipe_container").bind('mouseup', function() {
+                    bindMouseUp();
+                });
+            }
+        }
+
+        $("#swipe_container").mouseup(function() {
+            bindMouseUp();
+        });
+    });
+    </script>
+<style type="text/css">
+        #container {
+            width: 320px;
+            height: 480px;
+            overflow: hidden;
+            border: 5px solid #0099cc;
+            margin:0 auto;
+        }
+        #swipe_container {
+            width: 1600px;
+            background: #999;
+        }
+        .item {
+            font-size: 24px;
+            width: 320px; 
+            height: 480px; 
+            float: left;
+            background: #e3e3e3;
+        }
+    </style>
+</HEAD>
+<BODY onload="initialize()">
+<A href="./1.html">Different Events</A><br>
+<A href="./2.html" STYLE="font-weight: 900">Web things</A><br>
+<A href="./3.html">Video-audio</A><br>
+<h3><p>Web Preview</p></h3>
+<div id="box">
+<iframe src="http://www.wikipedia.org/" style="width:500px; height:500px" scrolling="yes"></iframe>
+</div>
+<br>
+<h3><p>Google maps</p></h3>
+<div id="map_canvas" style="width:500px; height:500px"></div>
+<br>
+<h3><p>Tabset</p></h3>
+<dl class="tabset"><dt class="ieclear"></dt>
+	<dt>Tab 1</dt>
+	<dd><img src="http://cs1218.userapi.com/u2388097/3507/x_c9869028.jpg" alt="Audrey Hepburn"></img></dd>
+	<dt class="active">Tab 2</dt>
+	<dd><img src="http://cs15.userapi.com/u673310/3507/x_d615c9f458.jpg" alt="Audrey Hepburn"></img></dd>
+	<dt>Tab 3</dt>
+	<dd><img src="http://cs160.userapi.com/u2388097/3507/x_0e26e825.jpg" alt="Audrey Hepburn"></dd>
+</dl>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h3><p>360 View</p></h3>
+<br></br>
+<div id="bike"></div>
+<h3><p>Gallery (drag images)</p></h3>
+<br></br>
+<div id="container">
+    <div id="swipe_container">
+        <div class="item"><img src="http://dl.dropbox.com/u/59849502/Final_test_site/images/mad.jpg" alt="Emotions"></img></div>
+        <div class="item"><img src="http://dl.dropbox.com/u/59849502/Final_test_site/images/silly.jpg" alt="Emotions"></img></div>
+        <div class="item"><img src="http://dl.dropbox.com/u/59849502/Final_test_site/images/tired.jpg" alt="Emotions"></img></div>
+        <div style="clear:both"></div>
+    </div>
+</div>
+<br></br>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://visualize.dev.mdcn.mobi/" : "http://visualize.dev.mdcn.mobi/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://visualize.dev.mdcn.mobi/piwik.php?idsite=4" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+</BODY>
+</HTML>
